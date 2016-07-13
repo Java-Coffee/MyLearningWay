@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.button.MainActivity"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click"/>
+    <ImageButton
+        android:id="@+id/ImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/dialog_holo_dark_frame"
+        android:background="#000000"/>
+    <com.example.button.MarqueeText
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_name"
+        android:textSize="30sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"/>
+    <com.example.button.MarqueeText
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_name"
+        android:textSize="30sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"/>
+    <AutoCompleteTextView
+        android:id="@+id/Auto1"
+        android:completionThreshold="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input"/>
+    <ToggleButton
+        android:id="@+id/Togglebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="picture1"
+        android:textOn="picture2"
+        />
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/picture1"/>
+</LinearLayout>

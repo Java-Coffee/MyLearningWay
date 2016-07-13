@@ -10,12 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Hello" />
+            <option value="$PROJECT_DIR$/button" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Hello" />
+            <option value="$PROJECT_DIR$/button" />
           </set>
         </option>
       </GradleProjectSettings>
