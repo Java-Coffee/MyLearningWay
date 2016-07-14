@@ -75,3 +75,65 @@
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                            ImgView.setBackgroundResource(b ? R.drawable.picture1 : R.drawable.picture2);
                     }
+五、安卓五大布局（布局中可以套用布局）
+      1.LinearLayout线性布局
+      android:orientation = "vertical" ----该属性决定他子类控件的排布方式（vertical垂直排布，horizontal水平排布）
+      android:gravity = "center" ---- 该属性决定他子类的xy位置
+      center_vertical:垂直居中
+      center_horizontal:水平居中
+      center:水平垂直都居中
+      right\left\bottom:子类控件位于当前布局的右边\左边\下面
+      子类控件在LinearLayout中常用的属性
+      android:layout_gravity = "bottom" ----指本身在当前父容器的XY的一个位置
+      android:layout_weight = "1" ----指本身控件占当前父容器的一个比例
+      2.RelativeLayout相对布局
+      子类控件相对父类容器
+              android:layout_alignparentLeft,
+              android:layout_alignparentTop,
+              android:layout_marginLeft,
+              android:layout_marginTop,
+              android:layout_centerInparent,
+              android:layout_centerHorizontal,
+              android:layout_centerVertical
+      子类控件相对子类控件
+              android:layout_below
+              android:layout_toRightOf
+              android:layout_above
+              android:layout_toLeftOf
+              android:layout_alignBaseline
+      在一条线上
+              android:layout_alignBottom
+              android:layout_alignLeft
+              android:layout_alignRight
+              android:layout_alignTop
+      3.FrameLayout帧布局
+      4.AbsoluteLayout绝对布局（也叫坐标布局，可以直接指定子元素的绝对位置位置(x,y)）
+              在屏幕的适配上有缺陷
+              android:layout_x="35dip"
+      5.TableLayout表格布局
+              android:collaseColumns="1,2"隐藏第多少列，用逗号隔开
+              android:layout_column="1"该控件显示在第二列
+              android:layout_san="2"该控件占据2列
+六、安卓四大组件
+      -- Activity
+      -- Service
+      -- BroadcastReceiver
+      -- Content Provider
+      1.Activity如何创建使用
+          继承Android的Activity类
+          重写方法
+          设置显示布局
+          在AndroidManifest文件中，注册Activity
+      2.Activity生命周期
+        onCreate() -> onStart() -> onResume() -> Activity running -> onpause() -> onStop -> onDestroy -> Activity Shutdown
+      3.Activity四种状态
+        -- 活动状态（Active/Running）Activity处于界面最顶端，获取焦点
+        -- 暂停状态 (Paused)Activity失去焦点，但对用户可见
+        -- 停止状态（Stopped）Activity被完全遮挡，但保留所有状态和成员信息
+        -- 非活动状态（killed）Activity被停止
+六、Intent实现页面跳转
+      1.startActivity(intent)直接跳转
+      2.startActivityForResult(intent,requestCode);
+        onActivityResult(int requestCode,int resultCode,Intent data);
+        requestCode 接收页面的标志，data 数据存储，resultCode返回页面的标志
+        setResult(resultCode,data);
