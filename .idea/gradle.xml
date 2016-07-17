@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/button" />
             <option value="$PROJECT_DIR$/learn2" />
             <option value="$PROJECT_DIR$/learning3" />
+            <option value="$PROJECT_DIR$/learning4" />
           </set>
         </option>
         <option name="myModules">
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$/button" />
             <option value="$PROJECT_DIR$/learn2" />
             <option value="$PROJECT_DIR$/learning3" />
+            <option value="$PROJECT_DIR$/learning4" />
           </set>
         </option>
       </GradleProjectSettings>

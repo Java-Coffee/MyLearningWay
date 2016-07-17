@@ -177,4 +177,7 @@
       OnScrollListener:监测滚动的变化，可以用于视图在滚动中的加载数据
       监听器是程序和用户交互的桥梁(通过接口实现)
       notifyDataSetChanged()适配器数据刷新，能够动态更新视图中所包含的数据，如下滑加载
-      3.DataPicker&&TimePicker
+      3.DataPicker&&TimePicker动态输入时间和日期的功能
+        DataPickerDialog&&TimePickerDialog动态输入时间和日期对话框
+        OnDataChangedListener和OnTimeChangedListener()针对监测日期时间改变的监听器
+        OnDataSetListener&&OnTimeSetListener()
