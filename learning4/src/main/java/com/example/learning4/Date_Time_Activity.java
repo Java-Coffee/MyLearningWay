@@ -10,7 +10,7 @@ import android.widget.TimePicker;
 import java.util.Calendar;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class Date_Time_Activity extends AppCompatActivity {
     private DatePicker datePicker;
     private TimePicker timePicker;
     private Calendar calendar;
