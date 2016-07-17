@@ -1,3 +1,4 @@
 <resources>
     <string name="date_time">Date_TimePicker</string>
+    <string name="grid_view">GridView</string>
 </resources>

@@ -181,3 +181,10 @@
         DataPickerDialog&&TimePickerDialog动态输入时间和日期对话框
         OnDataChangedListener和OnTimeChangedListener()针对监测日期时间改变的监听器
         OnDataSetListener&&OnTimeSetListener()
+八、GridView
+      数据源(集合)->适配器(SimpleAdapter)->视图界面(GridView)
+      点击单个视图目标时的响应方法->OnItemClickListener
+      1.准备数据源
+      2.新建适配器(SimpleAdapter)
+      3.GridView加载适配器
+      4.GridView配置事件监听器(OnItemClickListener)

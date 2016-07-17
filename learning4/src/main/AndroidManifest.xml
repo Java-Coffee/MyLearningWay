@@ -18,6 +18,10 @@
         <activity android:name=".Date_Time_Activity">
 
         </activity>
+        <activity android:name=".GridView_Activity">
+
+        </activity>
+
     </application>
 
 </manifest>
