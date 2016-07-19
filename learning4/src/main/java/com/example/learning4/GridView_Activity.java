@@ -2,8 +2,11 @@ package com.example.learning4;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -15,7 +18,7 @@ import java.util.Map;
 /**
  * Created by DHW on 2016/7/17.
  */
-public class GridView_Activity extends AppCompatActivity {
+public class GridView_Activity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     private GridView gridView;
     private List<Map<String,Object>>datalist;
@@ -30,12 +33,13 @@ public class GridView_Activity extends AppCompatActivity {
     };
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    gridView = (GridView) findViewById(R.id.gridview);
+        setContentView(R.layout.gridview);
+        gridView = (GridView) findViewById(R.id.gridview);
         datalist = new ArrayList<Map<String, Object>>();
         adapter = new SimpleAdapter(this,getData(),R.layout.item_view,new String[]{"image","text"},new int[]{R.id.image,R.id.text});
         //getData();
         gridView.setAdapter(adapter);
-    //    gridView.setOnItemClickListener();
+        gridView.setOnItemClickListener(this);
     }
 
     private List<Map<String,Object>> getData() {
@@ -46,5 +50,10 @@ public class GridView_Activity extends AppCompatActivity {
             datalist.add(map);
         }
         return datalist;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Toast.makeText(this,iconName[i],Toast.LENGTH_LONG).show();
     }
 }
