@@ -12,6 +12,7 @@ import android.widget.Button;
 public class MainSet extends AppCompatActivity {
     private Button button1;
     private Button button2;
+    private Button button3;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_set);
@@ -29,6 +30,14 @@ public class MainSet extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent2 = new Intent(MainSet.this,GridView_Activity.class);
                 MainSet.this.startActivity(intent2);
+            }
+        });
+        button3 = (Button) findViewById(R.id.spinner);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(MainSet.this,Spinner_Activity.class);
+                MainSet.this.startActivity(intent3);
             }
         });
     }
