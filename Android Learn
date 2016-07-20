@@ -188,3 +188,6 @@
       2.新建适配器(SimpleAdapter)
       3.GridView加载适配器
       4.GridView配置事件监听器(OnItemClickListener)
+九、ProgressBar(进度条)
+style="@android:style/Widget.ProgressBar.Horizontal"
+自定义修改github样式
