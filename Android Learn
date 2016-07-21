@@ -191,3 +191,32 @@
 九、ProgressBar(进度条)
 style="@android:style/Widget.ProgressBar.Horizontal"
 自定义修改github样式
+十、WebView
+    1.通过Intent调用系统浏览器
+      Uri uri = Uri.parse(url); //
+      Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+      startActivity(intent);
+      2.WebView使用方法
+        1.将WebView加入你的应用
+        2.使用WebView加载页面
+              loadUrl("http://www.baidu.com");加载web资源
+              loadUrl("file:///android_assets/XX.html");加载本地资源
+              本地文件存放在：assets文件中
+              使页面获得焦点 webView.requestFocus();
+        3.获取网络访问权限
+        <manifest...>
+        <uses-permisson android:name="android.permission.INTERNET"/
+        >
+        </manifest>
+        4.在WebView中使用Javascript
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnable(true);
+        5.处理页面导航
+        webView.setWebViewClient(new WebViewClient());
+        6.后退与前进
+        goBack(),goForward()
+        7.判断页面加载过程
+          webView.setWebChromeClient(new WebChromeClient())
+        8.WebView缓存的运用
+        webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); //优先使用缓存
+        webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);   //不使用缓存
