@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.fragment.MainActivity">
+
+<RadioGroup
+    android:layout_alignParentBottom="true"
+    android:id="@+id/radiogroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/first"
+        android:text="静态加载"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center_horizontal"
+        android:button="@null"/>
+    <RadioButton
+        android:text="动态加载"
+        android:id="@+id/second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center_horizontal"
+        android:button="@null"/>
+    <RadioButton
+        android:text="生命周期"
+        android:id="@+id/thrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center_horizontal"
+        android:button="@null"/>
+    <RadioButton
+        android:text="相互通信"
+        android:id="@+id/forth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center_horizontal"
+        android:button="@null"/>
+</RadioGroup>
+</RelativeLayout>
