@@ -221,4 +221,5 @@ style="@android:style/Widget.ProgressBar.Horizontal"
         webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); //优先使用缓存
         webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);   //不使用缓存
 十一、Fragment
-    
+    静态加载
+    动态加载
