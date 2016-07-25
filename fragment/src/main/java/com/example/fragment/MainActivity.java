@@ -1,6 +1,8 @@
 package com.example.fragment;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
@@ -27,6 +29,12 @@ private RadioGroup radioGroup;
                 break;
             case R.id.second:
                 Toast.makeText(MainActivity.this,"2",Toast.LENGTH_SHORT).show();
+                MyFragment2 fragment2 = new MyFragment2();
+                android.app.FragmentManager fragmentmanager = getFragmentManager();
+                FragmentTransaction beginTransaction = fragmentmanager.beginTransaction();
+                beginTransaction.add(R.id.frame,fragment2);
+                beginTransaction.addToBackStack(null);
+                beginTransaction.commit();
                 break;
             case R.id.thrid:
                 Toast.makeText(MainActivity.this,"3",Toast.LENGTH_SHORT).show();
