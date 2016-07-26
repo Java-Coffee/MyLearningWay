@@ -223,3 +223,5 @@ style="@android:style/Widget.ProgressBar.Horizontal"
 十一、Fragment
     静态加载
     动态加载
+    生命周期
+    相互通信
