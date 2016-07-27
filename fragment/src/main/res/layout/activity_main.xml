@@ -5,11 +5,18 @@
     android:layout_height="match_parent"
 
     tools:context="com.example.fragment.MainActivity">
-    <LinearLayout
-        android:id="@+id/frame"
+    <Button
+        android:id="@+id/buttonTest"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></LinearLayout>
-
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></LinearLayout>
 <RadioGroup
     android:layout_alignParentBottom="true"
     android:id="@+id/radiogroup"
