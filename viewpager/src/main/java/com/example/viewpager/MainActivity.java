@@ -1,6 +1,7 @@
 package com.example.viewpager;
 
 import android.graphics.Color;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private List<String> taplist;
     private ViewPager viewPager;
     private PagerTitleStrip tabStrip;
+    private List<Fragment>fragmentList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +42,18 @@ public class MainActivity extends AppCompatActivity {
         viewList.add(view2);
         viewList.add(view3);
         viewList.add(view4);
+
+        //通过Fragment作为ViewPager的数据源
+        fragmentList = new ArrayList<Fragment>();
+        fragmentList.add(new Fragment1());
+        fragmentList.add(new Fragment2());
+        fragmentList.add(new Fragment3());
+        fragmentList.add(new Fragment4());
+
         MyPagerAdapter adapter = new MyPagerAdapter(viewList, taplist);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(adapter);
-
+       // viewPager.setAdapter(adapter);
+MyFragmentPagerAdapter adapter1 = new MyFragmentPagerAdapter(getSupportFragmentManager(),fragmentList,taplist);
+    viewPager.setAdapter(adapter1);
     }
 }
