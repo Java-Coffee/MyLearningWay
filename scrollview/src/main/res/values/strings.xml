@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">ScrollView</string>
+    <string name="text">一、事件监听三种方式
+    1.匿名内部类
+            clickButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    System.out.println("button被点击");
+                }
+            });
+            2.自定义外部类继承OnClickListener类的onClick方法
+        clickButton.setOnClickListener(new MyOnClickListener() {
+            @Override
+            public void onClick(View v) {
+                super.onClick(v);
+                Toast.makeText(MainActivity.this, "按钮被点击", Toast.LENGTH_LONG).show();
+            }
+        });
+        class MyOnClickListener implements View.OnClickListener {
+
+            @Override
+            public void onClick(View v) {
+                v.setAlpha(0.5f);
+            }
+        }
+        3.接口方式监听按钮点击事件
+    二、TextView跑马灯
+
+        创建类继承TextView构造方法以及重载isFocused方法
+        public class MarqueeText extends TextView{
+            public MarqueeText(Context context) {
+                super(context);
+            }
+
+            public MarqueeText(Context context, AttributeSet attrs, int defStyleAttr) {
+                super(context, attrs, defStyleAttr);
+            }
+
+            public MarqueeText(Context context, AttributeSet attrs) {
+                super(context, attrs);
+            }
+
+            @Override
+            public boolean isFocused() {
+                return true;
+            }  //所有的isFocused返回值都是true才能实现多行跑马灯
+        }
+三、AutoCompleteTextView 动态匹配输入内容
+    android:completionThreshold="2"      设置输入多少字符自动匹配
+    设置步骤：1.初始化控件
+              2.创建数组适配器成放数组
+              ArrayAdapterString adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Input);
+              3.初始化数据源匹配输入框中内容
+              4.将adapter适配器与AutoCompleteTextView绑定
+              AutoComplete.setAdapter(adapter);
+    MultiAutoCompleteTextView多次输入匹配，区别是mtxt.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());设置分隔符</string>
+</resources>
