@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ViewFlipper</string>
+    <string name="text">一、事件监听三种方式
+    1.匿名内部类
+            clickButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    System.out.println("button被点击");
+                }
+            });
+            2.自定义外部类继承OnClickListener类的onClick方法
+        clickButton.setOnClickListener(new MyOnClickListener() {
+            @Override
+            public void onClick(View v) {
+                super.onClick(v);
+                Toast.makeText(MainActivity.this, "按钮被点击", Toast.LENGTH_LONG).show();
+            }
+        });
+        class MyOnClickListener implements View.OnClickListener {
+
+            @Override
+            public void onClick(View v) {
+                v.setAlpha(0.5f);
+            }
+        }
+        3.接口方式监听按钮点击事件</string>
+</resources>
