@@ -225,4 +225,11 @@ style="@android:style/Widget.ProgressBar.Horizontal"
     动态加载
     生命周期
     相互通信
-十二、ScrollBar
+十二、Gallery
+     1.添加图片资源数组（准备数据源）
+     2.声明Gallery并初始化
+     3.创建自定义适配器（准备适配器）
+         继承BasaAdapter,并实现原有方法，写构造方法，注意传参
+         getView方法中传递数组图像，加载View背景图像资源，设置Gallery大小
+         设置缩放模式，返回ImageView
+     4.Gallery加载适配器，实例化adapter
