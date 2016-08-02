@@ -233,3 +233,11 @@ style="@android:style/Widget.ProgressBar.Horizontal"
          getView方法中传递数组图像，加载View背景图像资源，设置Gallery大小
          设置缩放模式，返回ImageView
      4.Gallery加载适配器，实例化adapter
+十三、安卓布局五大原则
+     1.尽量多使用LinearLayout和RelativeLayout,不要使用AbsoluteLayout
+     2.在布局层次一样的情况下建议使用LinearLayout代替RelativeLayout
+     3.将可复用的组件抽取出来并通过include标签使用
+          将共用的组件抽取出来单独放到一个xml文件中，然后使用include标签导入共用布局
+          效果：提高UI的制作和复用效率，也能保证制作的UI布局更加工整和易维护
+     4.使用ViewStub标签来加载一些不常用的布局
+     5.使用merge标签减少布局的嵌套层次
