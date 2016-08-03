@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.0"
 
     defaultConfig {
-        applicationId "com.example.gallery"
+        applicationId "com.example.myapplication"
         minSdkVersion 17
         targetSdkVersion 24
         versionCode 1
