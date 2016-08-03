@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Hello" />
+            <option value="$PROJECT_DIR$/asynctask" />
             <option value="$PROJECT_DIR$/button" />
             <option value="$PROJECT_DIR$/fragment" />
             <option value="$PROJECT_DIR$/gallery" />
@@ -28,6 +29,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Hello" />
+            <option value="$PROJECT_DIR$/asynctask" />
             <option value="$PROJECT_DIR$/button" />
             <option value="$PROJECT_DIR$/fragment" />
             <option value="$PROJECT_DIR$/gallery" />
