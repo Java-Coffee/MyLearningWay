@@ -14,18 +14,18 @@ tools:context="com.example.mybaseadapter.MainActivity">
 <TextView
     android:id="@+id/tv_title"
     android:layout_width="match_parent"
-    android:layout_height="30dp"
+    android:layout_height="20dp"
     android:layout_toRightOf="@+id/image"
     android:text="Title"
-    android:gravity="center"
-    android:textSize="25sp"/>
+    android:layout_alignTop="@+id/image"
+    android:textSize="15sp"/>
 <TextView
     android:id="@+id/tv_content"
     android:layout_width="match_parent"
-    android:layout_height="30dp"
+    android:layout_height="15dp"
     android:layout_toRightOf="@+id/image"
     android:layout_below="@+id/tv_title"
     android:text="Content"
     android:gravity="center_vertical"
-    android:textSize="20sp"/>
+    android:textSize="10sp"/>
 </RelativeLayout>

@@ -84,7 +84,15 @@ public class MyAdapter extends BaseAdapter {
         }else {
             viewHolder = (ViewHolder) view.getTag();
         }
-        viewHolder.imageView.setImageResource(mList.get(i).ItemImageID);
+        viewHolder.imageView.setImageResource(R.mipmap.ic_launcher);
+        //new ImageLoader().showImageByThread(viewHolder.imageView,mList.get(i).ItemImageID);
+
+        String url = mList.get(i).ItemImageID;
+        viewHolder.imageView.setTag(url);
+        //使用Thread加载网络图片
+        //new ImageLoader().showImageByThread(viewHolder.imageView,url);
+        //使用异步加载网络图片
+        new ImageLoader().showImageByAsyncTask(viewHolder.imageView,url);
         viewHolder.title.setText(mList.get(i).ItemTitle);
         viewHolder.content.setText(mList.get(i).ItemContent);
         return view;
