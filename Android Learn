@@ -248,3 +248,11 @@ style="@android:style/Widget.ProgressBar.Horizontal"
      AsyncTask为何而生
            子线程中更新UI
            封装、简化异步操作
+十五、Android四种数据存储方式
+           1.SharePreferences
+               轻型的数据存储方式
+               本质是基于XML文件存储key-value键值对数据
+               通常用来存储简单的配置文件信息
+           2.SQLite
+           3.Content Provider
+           4.File
