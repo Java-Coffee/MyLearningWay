@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybaseadapter/mybaseadapter.iml" filepath="$PROJECT_DIR$/mybaseadapter/mybaseadapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/scrollview/scrollview.iml" filepath="$PROJECT_DIR$/scrollview/scrollview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharedpreferencesdemo/sharedpreferencesdemo.iml" filepath="$PROJECT_DIR$/sharedpreferencesdemo/sharedpreferencesdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewflipper/viewflipper.iml" filepath="$PROJECT_DIR$/viewflipper/viewflipper.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpager/viewpager.iml" filepath="$PROJECT_DIR$/viewpager/viewpager.iml" />
     </modules>

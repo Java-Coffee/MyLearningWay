@@ -1,1 +1,1 @@
-include ':Hello', ':button', ':learn2', ':learning3', ':learning4', ':learning5', ':fragment', ':viewpager', ':viewflipper', ':scrollview', ':gallery', ':myapplication', ':mybaseadapter', ':asynctask'
+include ':Hello', ':button', ':learn2', ':learning3', ':learning4', ':learning5', ':fragment', ':viewpager', ':viewflipper', ':scrollview', ':gallery', ':myapplication', ':mybaseadapter', ':asynctask', ':sharedpreferencesdemo'
