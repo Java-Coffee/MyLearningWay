@@ -254,5 +254,12 @@ style="@android:style/Widget.ProgressBar.Horizontal"
                本质是基于XML文件存储key-value键值对数据
                通常用来存储简单的配置文件信息
            2.SQLite
+               轻量级  一个动态库、单文件
+               独立性  没有依赖、无需安装
+               隔离性  全部在一个文件夹中
+               跨平台  支持众多操作系统
+               多语言接口  支持众多编程语言
+               安全性  事务（独占性和共享锁）多个进程可以同时读数据，只能一个进程写数据
+               支持数据类型  NULL空值,INTEGER整型值,REAL浮点值,TEXT字符串值,BLOB二进制对象
            3.Content Provider
            4.File
