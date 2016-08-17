@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybaseadapter/mybaseadapter.iml" filepath="$PROJECT_DIR$/mybaseadapter/mybaseadapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/scrollview/scrollview.iml" filepath="$PROJECT_DIR$/scrollview/scrollview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicedemo/servicedemo.iml" filepath="$PROJECT_DIR$/servicedemo/servicedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharedpreferencesdemo/sharedpreferencesdemo.iml" filepath="$PROJECT_DIR$/sharedpreferencesdemo/sharedpreferencesdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" filepath="$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlitedemo1/sqlitedemo1.iml" filepath="$PROJECT_DIR$/sqlitedemo1/sqlitedemo1.iml" />
